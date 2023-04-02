@@ -27,7 +27,7 @@ public record CategoryServiceImpl(CategoryRepository categoryRepository, Mapper 
     public CategoryListDTO findById(Long id) {
         return mapper.categoryListDTOtoEntity(categoryRepository
                 .findById(id).orElseThrow(() ->
-                        new NotFoundException("We cant fount a category with ID: ")));
+                        new NotFoundException("We can't found a category with ID: "+id.toString())));
     }
 
     private void verifyUser(String name) throws ExistsException

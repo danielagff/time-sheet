@@ -14,9 +14,9 @@ public record CategoryController(CategoryService categoryService) {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public CategoryDTO createCategory(@RequestBody CategoryDTO category)
+    public CategoryDTO createCategory(@RequestBody CategoryDTO categoryDTO)
     {
-        return categoryService.createCategory(category);
+        return categoryService.createCategory(categoryDTO);
     }
 
     @GetMapping("/{id}")
