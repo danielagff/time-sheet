@@ -1,8 +1,8 @@
-package com.timesheet.Controller;
+package com.timesheet.controller;
 
-import com.timesheet.DTO.CategoryDTO;
-import com.timesheet.DTO.CategoryListDTO;
-import com.timesheet.Service.CategoryService;
+import com.timesheet.dto.CategoryDTO;
+import com.timesheet.dto.CategoryListDTO;
+import com.timesheet.service.CategoryService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

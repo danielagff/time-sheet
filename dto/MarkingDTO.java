@@ -1,9 +1,7 @@
-package com.timesheet.DTO;
+package com.timesheet.dto;
 
-import com.timesheet.Model.Marking;
-import lombok.AllArgsConstructor;
+import com.timesheet.model.Marking;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;

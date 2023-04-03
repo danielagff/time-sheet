@@ -1,10 +1,8 @@
-package com.timesheet.Mapper;
+package com.timesheet.mapper;
 
-import com.timesheet.DTO.CategoryDTO;
-import com.timesheet.DTO.CategoryListDTO;
-import com.timesheet.DTO.MarkingDTO;
-import com.timesheet.Model.Category;
-import com.timesheet.Model.Marking;
+import com.timesheet.dto.CategoryDTO;
+import com.timesheet.dto.CategoryListDTO;
+import com.timesheet.model.Category;
 import org.springframework.stereotype.Component;
 
 import java.util.stream.Collectors;

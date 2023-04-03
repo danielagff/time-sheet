@@ -1,4 +1,4 @@
-package com.timesheet.Exception;
+package com.timesheet.exception;
 
 public class ExistsException extends RuntimeException{
     public ExistsException(String message) {

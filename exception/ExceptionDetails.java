@@ -1,4 +1,4 @@
-package com.timesheet.Exception;
+package com.timesheet.exception;
 
 import lombok.Builder;
 import lombok.Data;

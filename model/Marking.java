@@ -1,11 +1,9 @@
-package com.timesheet.Model;
+package com.timesheet.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.timesheet.DTO.MarkingDTO;
+import com.timesheet.dto.MarkingDTO;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;

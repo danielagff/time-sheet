@@ -1,7 +1,7 @@
-package com.timesheet.Service;
+package com.timesheet.service;
 
-import com.timesheet.DTO.CategoryDTO;
-import com.timesheet.DTO.MarkingDTO;
+import com.timesheet.dto.CategoryDTO;
+import com.timesheet.dto.MarkingDTO;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;

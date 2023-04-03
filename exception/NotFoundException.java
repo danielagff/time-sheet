@@ -1,4 +1,4 @@
-package com.timesheet.Exception;
+package com.timesheet.exception;
 
 public class NotFoundException extends RuntimeException{
 

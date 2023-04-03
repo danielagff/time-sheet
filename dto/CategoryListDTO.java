@@ -1,6 +1,5 @@
-package com.timesheet.DTO;
+package com.timesheet.dto;
 
-import com.timesheet.Model.Marking;
 import lombok.Getter;
 import lombok.Setter;
 

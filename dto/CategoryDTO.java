@@ -1,14 +1,8 @@
-package com.timesheet.DTO;
+package com.timesheet.dto;
 
-import com.timesheet.Model.Category;
-import lombok.AllArgsConstructor;
+import com.timesheet.model.Category;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
 
 @Getter
 @Setter

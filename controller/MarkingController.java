@@ -1,13 +1,11 @@
-package com.timesheet.Controller;
+package com.timesheet.controller;
 
-import com.timesheet.DTO.CategoryDTO;
-import com.timesheet.DTO.MarkingDTO;
-import com.timesheet.Service.MarkingService;
+import com.timesheet.dto.CategoryDTO;
+import com.timesheet.dto.MarkingDTO;
+import com.timesheet.service.MarkingService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.URLDecoder;
-import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 import java.util.List;
 

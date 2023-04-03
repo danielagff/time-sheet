@@ -1,16 +1,13 @@
-package com.timesheet.Service.Impl;
+package com.timesheet.service.impl;
 
-import com.timesheet.DTO.CategoryDTO;
-import com.timesheet.DTO.CategoryListDTO;
-import com.timesheet.Exception.ExistsException;
-import com.timesheet.Exception.NotFoundException;
-import com.timesheet.Mapper.Mapper;
-import com.timesheet.Model.Category;
-import com.timesheet.Repository.CategoryRepository;
-import com.timesheet.Service.CategoryService;
+import com.timesheet.dto.CategoryDTO;
+import com.timesheet.dto.CategoryListDTO;
+import com.timesheet.exception.ExistsException;
+import com.timesheet.exception.NotFoundException;
+import com.timesheet.mapper.Mapper;
+import com.timesheet.repository.CategoryRepository;
+import com.timesheet.service.CategoryService;
 import org.springframework.stereotype.Component;
-
-import java.util.Optional;
 
 
 @Component

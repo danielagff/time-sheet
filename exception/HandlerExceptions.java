@@ -1,4 +1,4 @@
-package com.timesheet.Exception;
+package com.timesheet.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

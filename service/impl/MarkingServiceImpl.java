@@ -1,13 +1,13 @@
-package com.timesheet.Service.Impl;
+package com.timesheet.service.impl;
 
-import com.timesheet.DTO.CategoryDTO;
-import com.timesheet.DTO.MarkingDTO;
-import com.timesheet.Exception.NotFoundException;
-import com.timesheet.Model.Category;
-import com.timesheet.Model.Marking;
-import com.timesheet.Repository.CategoryRepository;
-import com.timesheet.Repository.MarkingRepository;
-import com.timesheet.Service.MarkingService;
+import com.timesheet.dto.CategoryDTO;
+import com.timesheet.dto.MarkingDTO;
+import com.timesheet.exception.NotFoundException;
+import com.timesheet.model.Category;
+import com.timesheet.model.Marking;
+import com.timesheet.repository.CategoryRepository;
+import com.timesheet.repository.MarkingRepository;
+import com.timesheet.service.MarkingService;
 import org.springframework.stereotype.Component;
 
 import java.net.URLDecoder;

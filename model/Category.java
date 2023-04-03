@@ -1,8 +1,8 @@
-package com.timesheet.Model;
+package com.timesheet.model;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.timesheet.DTO.CategoryDTO;
+import com.timesheet.dto.CategoryDTO;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

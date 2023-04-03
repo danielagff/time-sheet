@@ -1,8 +1,7 @@
-package com.timesheet.Service;
+package com.timesheet.service;
 
-import com.timesheet.DTO.CategoryDTO;
-import com.timesheet.DTO.CategoryListDTO;
-import com.timesheet.Model.Category;
+import com.timesheet.dto.CategoryDTO;
+import com.timesheet.dto.CategoryListDTO;
 import org.springframework.stereotype.Service;
 
 @Service

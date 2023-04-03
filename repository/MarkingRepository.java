@@ -1,6 +1,6 @@
-package com.timesheet.Repository;
+package com.timesheet.repository;
 
-import com.timesheet.Model.Marking;
+import com.timesheet.model.Marking;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
