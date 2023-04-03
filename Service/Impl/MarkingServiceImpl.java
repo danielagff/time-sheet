@@ -10,6 +10,8 @@ import com.timesheet.Repository.MarkingRepository;
 import com.timesheet.Service.MarkingService;
 import org.springframework.stereotype.Component;
 
+import java.net.URLDecoder;
+import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -46,11 +48,32 @@ public record MarkingServiceImpl(MarkingRepository markingRepository, CategoryRe
                 .map(Marking::entityToDTO).collect(Collectors.toList());
     }
 
+    public List<MarkingDTO> getMarkingsByDateAndUserAndCategory(LocalDateTime time, String userName, CategoryDTO categoryDTO)
+    {
+        String decodedUserName = URLDecoder.decode(userName, StandardCharsets.UTF_8);
+
+        verifyUser(decodedUserName);
+
+        return getMarkingsByCategoryName(categoryDTO).stream()
+                .filter(m -> m.getUserName().equals(decodedUserName) &&
+                        m.getMarkingTime().getMonth().equals(time.getMonth()) &&
+                        m.getMarkingTime().getDayOfMonth() == time.getDayOfMonth())
+                .collect(Collectors.toList());
+    }
+
     private void getCategoryByName(String name)
     {
         categoryRepository.findAll().stream()
                 .filter(c -> c.getName().equals(name))
                 .map(Category::convertToDTO).findAny()
                 .orElseThrow(() -> new NotFoundException(name));
+    }
+
+    private void verifyUser(String user)
+    {
+         if(!markingRepository.existsByUserName(user))
+         {
+             throw new NotFoundException("this user name ("+user+") don't exists");
+         }
     }
 }

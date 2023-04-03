@@ -7,7 +7,8 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
-@Getter @Setter
+@Getter
+@Setter
 public class CategoryListDTO {
 
     private String name;

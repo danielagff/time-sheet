@@ -3,17 +3,10 @@ package com.timesheet.Model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.timesheet.DTO.CategoryDTO;
-import com.timesheet.DTO.CategoryListDTO;
-import com.timesheet.DTO.MarkingDTO;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Entity
 @Table(name = "categories")

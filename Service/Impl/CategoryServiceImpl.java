@@ -32,7 +32,7 @@ public record CategoryServiceImpl(CategoryRepository categoryRepository, Mapper 
 
     private void verifyUser(String name) throws ExistsException
     {
-        if (categoryRepository.findByName(name) >= 1)
+        if (categoryRepository.existsByName(name))
         {
             throw new ExistsException(name);
         }

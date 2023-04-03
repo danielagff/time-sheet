@@ -2,9 +2,9 @@ package com.timesheet.Service;
 
 import com.timesheet.DTO.CategoryDTO;
 import com.timesheet.DTO.MarkingDTO;
-import com.timesheet.Model.Marking;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -15,5 +15,7 @@ public interface MarkingService {
     List<MarkingDTO> getMarkingsByOwner(MarkingDTO markingDTO);
 
     List<MarkingDTO> getMarkingsByCategoryName(CategoryDTO categoryDTO);
+
+    List<MarkingDTO> getMarkingsByDateAndUserAndCategory(LocalDateTime time, String userName, CategoryDTO categoryDTO);
 
 }

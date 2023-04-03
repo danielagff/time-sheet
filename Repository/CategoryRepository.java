@@ -12,8 +12,7 @@ import java.util.Optional;
 @Repository
 public interface CategoryRepository extends JpaRepository<Category, Long> {
 
-    @Query(value = "select count(1) from categories c where c.category_name =:name", nativeQuery = true)
-    int findByName(String name);
+    boolean existsByName(String name);
 
 
 }
