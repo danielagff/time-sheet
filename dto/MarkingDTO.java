@@ -14,12 +14,19 @@ public class MarkingDTO {
 
     private LocalDateTime markingTime;
 
+    private String categoryName;
+
     public MarkingDTO() {
     }
     public MarkingDTO(String userName, LocalDateTime markingTime) {
         this.userName = userName;
         this.markingTime = markingTime;
 
+    }
+    public MarkingDTO(String userName, LocalDateTime markingTime, String categoryName) {
+        this.userName = userName;
+        this.markingTime = markingTime;
+        this.categoryName = categoryName;
     }
 
     public Marking dtoToEntity()

@@ -24,4 +24,11 @@ public record CategoryController(CategoryService categoryService) {
         return ResponseEntity.ok(categoryService.findById(id));
     }
 
+    @GetMapping("/testeAmanda")
+    public ResponseEntity<Integer> getAmanda()
+    {
+        int a = 5+5;
+        return ResponseEntity.ok(a);
+    }
+
 }

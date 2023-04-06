@@ -69,7 +69,7 @@ public record MarkingServiceImpl(MarkingRepository markingRepository, CategoryRe
                 .orElseThrow(() -> new NotFoundException(name));
     }
 
-    private void verifyUser(String user)
+    public void verifyUser(String user)
     {
          if(!markingRepository.existsByUserName(user))
          {

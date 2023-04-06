@@ -38,7 +38,7 @@ public class Marking {
 
     public MarkingDTO entityToDTO()
     {
-        return new MarkingDTO(this.userName, this.markingTime);
+        return new MarkingDTO(this.userName, this.markingTime, this.category.getName());
     }
 
 

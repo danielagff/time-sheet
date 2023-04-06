@@ -6,6 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface MarkingRepository extends JpaRepository<Marking, Long> {
-
     boolean existsByUserName(String userName);
 }

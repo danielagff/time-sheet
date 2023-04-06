@@ -18,4 +18,6 @@ public interface MarkingService {
 
     List<MarkingDTO> getMarkingsByDateAndUserAndCategory(LocalDateTime time, String userName, CategoryDTO categoryDTO);
 
+    void verifyUser(String user);
+
 }
